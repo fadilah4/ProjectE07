@@ -33,7 +33,7 @@ nav ul li {
 
 
 nav ul li:hover a {
-	color: #eee;
+	color: #666;
 	transition: 1s;
 }
 
@@ -73,6 +73,10 @@ body{
 	width: 100%;
 	position: relative;
 	color: #fff;
+}
+.c-divs:nth-child(4){
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #diaged:nth-child(1){
@@ -116,11 +120,6 @@ body{
 	transform: skewY(-5deg);
 }
 
-#l-skew:nth-child(4){
-	border: none;
-	background-color: #000;
-}
-
 .fill{
 	font-weight: bold;
 	text-align: center;
@@ -129,6 +128,40 @@ body{
 	display: block;
 	height: auto;
 }
+
+.flufs{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.flufs div{
+	width: 50%;
+	display: inline-block;
+	margin: auto 0;
+	flex: 1 1 50%;
+}
+.flufs div h2{
+	margin-top: 1em;
+	font-weight: 600;
+}
+.flufs div p{
+	text-align: justify;
+	font-weight: 300;
+}
+
+.flufs button{
+	margin-top: 3.5em;
+	float: right;
+	border: 1px solid #36c108;
+	background: transparent;
+	outline: none;
+	padding: 3rem 15em;
+	color: #fff;
+	cursor: pointer;
+	font-size: 12px;
+	border-radius: 5px;
+}
+
 .ext-fill{
 	display: flex;
 	flex-wrap: wrap;
@@ -136,14 +169,13 @@ body{
 	align-items: flex-start;
 }
 
+.ext-fill .lefties{
+	margin-top: 12em;
+}
 
 .lefties{
 	width: 50%;
-	margin-top: 12em;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	flex: 1;
+	margin-top: 0;
 }
 .lefties button{
 	margin: 1.2em auto;
@@ -156,8 +188,15 @@ body{
 	font-size: 12px;
 	border-radius: 5px;
 }
+.righties{
+	align-items: flex-start;
+}
+.righties img{
+	width: 400px;
+}
+
 .objects{
-	margin-bottom: -8em;
+	margin: 0 0 -16em auto;
 }
 
 

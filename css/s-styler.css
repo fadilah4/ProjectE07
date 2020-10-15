@@ -63,12 +63,10 @@ body{
 }
 
 ::-webkit-scrollbar-thumb{
-	background: linear-gradient(transparent, #36c108);
-	border-radius: 4px;
+	background: linear-gradient(#58ee07, transparent);
 }
 ::-webkit-scrollbar-thumb:hover{
-	background: linear-gradient(transparent, #0f0);
-	border-radius: 4px;
+	background: linear-gradient(#0f0, transparent);
 }
 
 .c-divs{
@@ -144,11 +142,11 @@ body{
 	margin-top: 12em;
 	display: flex;
 	flex-wrap: wrap;
+	flex-direction: row;
 	flex: 1;
 }
 .lefties button{
-	align-content: center;
-	margin: 1.2em 5em 0;
+	margin: 1.2em auto;
 	border: 1px solid #36c108;
 	background: transparent;
 	outline: none;
@@ -240,14 +238,14 @@ body{
 		filter: hue-rotate(360deg);						
 	}
 }
-
+/* Content Die */
 
 
 
 .pyrrhic{
 	background-color: #000;
 	color: #fff;
-	padding: 200px 120px 30px;
+	padding: 200px 120px 70px;
 	height: auto;
 }
 .pyrrhic ul {
@@ -271,5 +269,3 @@ body{
 		left :-2.5em;
 	}
 }
-
-/* Content Die */

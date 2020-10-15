@@ -42,6 +42,7 @@ nav ul li a{
 
 /* End of navbar */
 
+/* Content stuff */
 body{
 	font-family: poppins;
 }
@@ -126,13 +127,24 @@ body{
 	display: block;
 	height: auto;
 }
+.ext-fill{
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1 1 50%;
+	align-items: flex-start;
+}
+
+
 .lefties{
 	width: 50%;
 	margin-top: 12em;
-	float: left;
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1;
 }
 .lefties button{
-	margin-top: 1.2em;
+	align-content: center;
+	margin: 1.2em 5em 0;
 	border: 1px solid red;
 	background: transparent;
 	outline: none;
@@ -143,7 +155,6 @@ body{
 	border-radius: 5px;
 }
 .objects{
-	float: right;
 	margin-bottom: -8em;
 }
 
@@ -167,8 +178,7 @@ body{
 	bottom: 100px;
 	border: 10px solid #fff;
 	border-radius: 50%;
-	box-shadow: 0 0 50px #0f0,
-							inset 0 0 50px #0f0;
+	box-shadow: 0 0 50px #0f0, inset 0 0 50px #0f0;
 	animation: hueSwing 5s linear infinite;						
 }
 #triads:after{
@@ -181,8 +191,7 @@ body{
 	bottom: 100px;
 	border: 13px solid #fff;
 	border-radius: 50%;
-	box-shadow: 0 0 30px #fff,
-							inset 0 0 30px #fff;
+	box-shadow: 0 0 30px #fff, inset 0 0 30px #fff;
 	
 }
 
@@ -203,33 +212,27 @@ body{
 
 @keyframes hueSwing{
 	0%{
-		box-shadow: 0 0 50px #0f0,
-								inset 0 0 50px #0f0;
+		box-shadow: 0 0 50px #0f0, inset 0 0 50px #0f0;
 		filter: hue-rotate(0deg);					
 	}
 	20%{
-		box-shadow: 0 0 40px #ff0000,
-								inset 0 0 40px #ff0000;
+		box-shadow: 0 0 40px #ff0000, inset 0 0 40px #ff0000;
 		filter: hue-rotate(50deg);						
 	}
 	40%{
-		box-shadow: 0 0 60px #0f0,
-								inset 0 0 60px #0f0;
+		box-shadow: 0 0 60px #0f0, inset 0 0 60px #0f0;
 		filter: hue-rotate(95deg);						
 	}
 	60%{
-		box-shadow: 0 0 40px #0f0,
-								inset 0 0 40px #0f0;
+		box-shadow: 0 0 40px #0f0, inset 0 0 40px #0f0;
 		filter: hue-rotate(190deg);						
 	}
 	80%{
-		box-shadow: 0 0 30px #0f0,
-								inset 0 0 30px #0f0;
+		box-shadow: 0 0 30px #0f0, inset 0 0 30px #0f0;
 		filter: hue-rotate(270deg);						
 	}
 	100%{
-		box-shadow: 0 0 50px #0f0,
-								inset 0 0 50px #0f0;
+		box-shadow: 0 0 50px #0f0, inset 0 0 50px #0f0;
 		filter: hue-rotate(360deg);						
 	}
 }
@@ -250,3 +253,12 @@ body{
 	top: -4em;
 }
 
+
+
+@media (max-width: 670px){
+	#triads{
+		left :-2.5em;
+	}
+}
+
+/* Content Die */

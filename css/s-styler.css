@@ -254,6 +254,11 @@ body{
 	list-style: none;
 	float: right;
 	position: relative;
+	top: -4em;
+}
+
+.pyrrhic ul li{
+	margin-top: 20px;
 }
 
 

@@ -6,6 +6,53 @@
 	box-sizing: border-box;
 }
 
+header {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url('/bg.png');
+	height: 100vh;
+	background-position: center;
+	position: relative;
+	z-index: 1;
+}
+
+header .overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: #000;
+	opacity: 0.5;
+	z-index: -1;
+}
+
+header .title {
+	text-align: center;
+	margin-top: 35vh;
+	z-index: 99;
+	color: white;
+}
+
+header .title img {
+	width: 100px;
+}
+
+header .title p {
+	font-size: 50px;
+	font-weight: bold;
+	letter-spacing: 10px;
+}
+
+header .btn {
+	padding: 15px 40px;
+	background-color: #58ee07;
+	cursor: pointer;
+	color: white;
+	display: inline-block;
+	border-radius: 4px;
+}
+
 /* Navbar */
 
 nav {
@@ -37,7 +84,7 @@ nav ul li:hover a {
 	transition: 1s;
 }
 
-nav ul li a{
+nav ul li a {
 	display: block;
 	padding: 15px;
 	color: #fff;
@@ -47,60 +94,66 @@ nav ul li a{
 /* End of navbar */
 
 /* Content stuff */
-body{
+body {
 	font-family: poppins;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
 	width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #333; 
-}
-::-webkit-scrollbar-track:hover {
-  background: #000; 
+	background: #333;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-track:hover {
+	background: #000;
+}
+
+::-webkit-scrollbar-thumb {
 	background: linear-gradient(#58ee07 80%, transparent 100%);
 }
-::-webkit-scrollbar-thumb:hover{
+
+::-webkit-scrollbar-thumb:hover {
 	background: linear-gradient(#0f0 80%, transparent 100%);
 }
 
-.c-divs{
+.c-divs {
 	width: 100%;
 	position: relative;
 	color: #fff;
 }
-.c-divs:nth-child(4){
+
+.c-divs:nth-child(4) {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-#diaged:nth-child(1){
+#diaged:nth-child(1) {
 	background-color: #000;
 	background-position: center center;
 	z-index: 10;
 }
-#diaged:nth-child(2){
+
+#diaged:nth-child(2) {
 	background-color: #333;
 	background-position: center center;
 	z-index: 9;
 }
-#diaged:nth-child(3){
+
+#diaged:nth-child(3) {
 	background-color: #000;
 	background-position: center center;
 	z-index: 8;
 }
-#diaged:nth-child(4){
+
+#diaged:nth-child(4) {
 	background-color: #333;
 	background-position: center center;
 	z-index: 7;
 }
 
-.c-divs:after{
+.c-divs:after {
 	content: '';
 	position: absolute;
 	width: 100%;
@@ -111,16 +164,17 @@ body{
 	bottom: 0;
 }
 
-#diaged:nth-child(odd):after{
+#diaged:nth-child(odd):after {
 	transform-origin: left bottom;
 	transform: skewY(5deg);
 }
-#diaged:nth-child(even):after{
+
+#diaged:nth-child(even):after {
 	transform-origin: right bottom;
 	transform: skewY(-5deg);
 }
 
-.fill{
+.fill {
 	font-weight: bold;
 	text-align: center;
 	padding: 130px 120px 70px;
@@ -129,27 +183,30 @@ body{
 	height: auto;
 }
 
-.flufs{
+.flufs {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
-.flufs div{
+
+.flufs div {
 	width: 50%;
 	display: inline-block;
 	margin: auto 0;
 	flex: 1 1 50%;
 }
-.flufs div h2{
+
+.flufs div h2 {
 	margin-top: 1em;
 	font-weight: 600;
 }
-.flufs div p{
+
+.flufs div p {
 	text-align: justify;
 	font-weight: 300;
 }
 
-.flufs button{
+.flufs button {
 	margin-top: 3.5em;
 	float: right;
 	border: 1px solid #36c108;
@@ -162,22 +219,23 @@ body{
 	border-radius: 5px;
 }
 
-.ext-fill{
+.ext-fill {
 	display: flex;
 	flex-wrap: wrap;
 	flex: 1 1 50%;
 	align-items: flex-start;
 }
 
-.ext-fill .lefties{
+.ext-fill .lefties {
 	margin-top: 12em;
 }
 
-.lefties{
+.lefties {
 	width: 50%;
 	margin-top: 0;
 }
-.lefties button{
+
+.lefties button {
 	margin: 1.2em auto;
 	border: 1px solid #36c108;
 	background: transparent;
@@ -188,14 +246,16 @@ body{
 	font-size: 12px;
 	border-radius: 5px;
 }
-.righties{
+
+.righties {
 	align-items: flex-start;
 }
-.righties img{
+
+.righties img {
 	width: 400px;
 }
 
-.objects{
+.objects {
 	margin: 0 0 -16em auto;
 }
 
@@ -209,9 +269,10 @@ body{
 	filter: url(#weeeve) blur(.5px);
 	animation: twist 14s linear infinite;
 }
-#triads:before{
+
+#triads:before {
 	content: '';
-	background: rgba(0,0,0, 0);
+	background: rgba(0, 0, 0, 0);
 	position: absolute;
 	top: 100px;
 	left: 100px;
@@ -220,11 +281,12 @@ body{
 	border: 10px solid #fff;
 	border-radius: 50%;
 	box-shadow: 0 0 50px #0f0, inset 0 0 50px #0f0;
-	animation: hueSwing 5s linear infinite;						
+	animation: hueSwing 5s linear infinite;
 }
-#triads:after{
+
+#triads:after {
 	content: '';
-	background: rgba(0,0,0, 0);
+	background: rgba(0, 0, 0, 0);
 	position: absolute;
 	top: 100px;
 	left: 100px;
@@ -233,60 +295,70 @@ body{
 	border: 13px solid #fff;
 	border-radius: 50%;
 	box-shadow: 0 0 30px #fff, inset 0 0 30px #fff;
-	
+
 }
 
-@keyframes twist{
-	0%{
+@keyframes twist {
+	0% {
 		transform: rotate(60deg) scale(1);
 	}
-	35%{
+
+	35% {
 		transform: rotate(-30deg) scale(1.2);
 	}
-	70%{
+
+	70% {
 		transform: scale(.8);
 	}
-	100%{
+
+	100% {
 		transform: rotate(60deg) scale(1);
 	}
 }
 
-@keyframes hueSwing{
-	0%{
+@keyframes hueSwing {
+	0% {
 		box-shadow: 0 0 50px #0f0, inset 0 0 50px #0f0;
-		filter: hue-rotate(0deg);					
+		filter: hue-rotate(0deg);
 	}
-	20%{
+
+	20% {
 		box-shadow: 0 0 40px #ff0000, inset 0 0 40px #ff0000;
-		filter: hue-rotate(50deg);						
+		filter: hue-rotate(50deg);
 	}
-	40%{
+
+	40% {
 		box-shadow: 0 0 60px #0f0, inset 0 0 60px #0f0;
-		filter: hue-rotate(95deg);						
+		filter: hue-rotate(95deg);
 	}
-	60%{
+
+	60% {
 		box-shadow: 0 0 40px #0f0, inset 0 0 40px #0f0;
-		filter: hue-rotate(190deg);						
+		filter: hue-rotate(190deg);
 	}
-	80%{
+
+	80% {
 		box-shadow: 0 0 30px #0f0, inset 0 0 30px #0f0;
-		filter: hue-rotate(270deg);						
+		filter: hue-rotate(270deg);
 	}
-	100%{
+
+	100% {
 		box-shadow: 0 0 50px #0f0, inset 0 0 50px #0f0;
-		filter: hue-rotate(360deg);						
+		filter: hue-rotate(360deg);
 	}
 }
+
 /* Content Die */
 
 
 
-.pyrrhic{
+.pyrrhic {
 	background-color: #000;
 	color: #fff;
 	padding: 200px 120px 70px;
 	height: auto;
 }
+
 .pyrrhic ul {
 	list-style: none;
 	float: right;
@@ -294,17 +366,17 @@ body{
 	top: -4em;
 }
 
-.pyrrhic ul li{
+.pyrrhic ul li {
 	padding-top: 40px;
 }
 
-.pyrrhic img{
+.pyrrhic img {
 	margin-top: -50px;
 }
 
 
-@media (max-width: 670px){
-	#triads{
-		left :-2.5em;
+@media (max-width: 670px) {
+	#triads {
+		left: -2.5em;
 	}
 }

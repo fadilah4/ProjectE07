@@ -88,14 +88,32 @@ body{
 	display: block;
 	height: auto;
 }
-
-
+.lefties{
+	width: 50%;
+	margin-top: 12em;
+	float: left;
+}
+.lefties button{
+	margin-top: 1.2em;
+	border: 1px solid red;
+	background: transparent;
+	outline: none;
+	padding: 8px 18px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 12px;
+	border-radius: 5px;
+}
+.objects{
+	float: right;
+	margin-bottom: -8em;
+}
 
 
 /*Fx stuff*/
 #triads {
 	position: relative;
-	float: right;
+	z-index: 15;
 	width: 450px;
 	height: 450px;
 	filter: url(#weeeve) blur(.5px);

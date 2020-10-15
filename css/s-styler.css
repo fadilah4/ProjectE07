@@ -7,6 +7,7 @@
 }
 
 header {
+	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-image: url('/bg.png');
@@ -374,9 +375,35 @@ body {
 	margin-top: -50px;
 }
 
+.navbar .menu-icon {
+	float: right;
+	display: none;
+}
 
 @media (max-width: 670px) {
 	#triads {
 		left: -2.5em;
+	}
+}
+
+@media (max-width : 768px) {
+	.flufs button {
+		float: none;
+		padding: 20px 50px;
+	}
+}
+
+@media (max-width: 425px) {
+	nav ul li {
+		display: none;
+	}
+
+	.navbar .menu-icon {
+		display: block;
+	}
+
+
+	.fill {
+		padding: 20px;
 	}
 }

@@ -63,10 +63,10 @@ body{
 }
 
 ::-webkit-scrollbar-thumb{
-	background: linear-gradient(#58ee07, transparent);
+	background: linear-gradient(#58ee07 80%, transparent 100%);
 }
 ::-webkit-scrollbar-thumb:hover{
-	background: linear-gradient(#0f0, transparent);
+	background: linear-gradient(#0f0 80%, transparent 100%);
 }
 
 .c-divs{

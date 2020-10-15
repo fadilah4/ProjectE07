@@ -247,7 +247,7 @@ body{
 .pyrrhic{
 	background-color: #000;
 	color: #fff;
-	padding: 200px 120px 130px;
+	padding: 200px 120px 30px;
 	height: auto;
 }
 .pyrrhic ul {
@@ -258,9 +258,12 @@ body{
 }
 
 .pyrrhic ul li{
-	margin-top: 1000px;
+	padding-top: 40px;
 }
 
+.pyrrhic img{
+	margin-top: -50px;
+}
 
 
 @media (max-width: 670px){

@@ -35,23 +35,25 @@
 			<div id="diaged" class="c-divs">
 				<div class="fill">
 					<h2>Extras Sample</h2>
-					<div class="lefties">
-						<p>Was joust found something called "Filter Effects Turbulunce", did this afterwards | refference: <span style="color: #e81b00; opacity: 0.4;">https://www.youtube.com/watch?v=avo71iW9mI4s</span></p>
-						<button>Go nowhere</button>
+					<div class="ext-fill">
+						<div class="lefties">
+							<p>Was joust found something called "Turbulunce", did this afterwards | refference: <span style="color: #e81b00; opacity: 0.4;">https://www.youtube.com/watch?v=avo71iW9mI4s</span></p>
+							<button>Go nowhere</button>
+						</div>
+						<!-- FX -->
+						<div class="objects">
+							<div id="triads"></div>
+							<svg>
+								<filter id="weeeve">
+									<feTurbulence x="0" y ="0" baseFrequency="0.023" numOctaves="8" seed="2.3">
+										<animate attributeName="baseFrequency" dur="14s" values="0.013; 0.023" repeatCount="indefinite">
+									</feTurbulence>
+									<feDisplacementMap in="SourceGraphic" scale="50">
+								</filter>	
+							</svg>
+						</div>
+						<!-- FX-die -->
 					</div>
-					<!-- FX -->
-					<div class="objects">
-						<div id="triads"></div>
-						<svg>
-							<filter id="weeeve">
-								<feTurbulence x="0" y ="0" baseFrequency="0.023" numOctaves="8" seed="2.3">
-									<animate attributeName="baseFrequency" dur="14s" values="0.013; 0.023" repeatCount="indefinite">
-								</feTurbulence>
-								<feDisplacementMap in="SourceGraphic" scale="50">
-							</filter>	
-						</svg>
-					</div>
-					<!-- FX-die -->
 				</div>
 			</div>
 			<div id="diaged" class="c-divs">
